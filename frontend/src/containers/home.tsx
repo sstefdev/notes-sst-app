@@ -72,7 +72,7 @@ const Home = () => {
 
   return (
     <div className="Home">
-      {isAuthenticated ? renderNotes() : renderLander()}
+      {isAuthenticated && notes ? renderNotes() : renderLander()}
     </div>
   );
 };
