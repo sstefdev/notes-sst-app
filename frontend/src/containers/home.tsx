@@ -71,7 +71,7 @@ const Home = () => {
 
   return (
     <div className="Home">
-      {isAuthenticated && notes.length > 0 ? renderNotes() : renderLander()}
+      {isAuthenticated ? renderNotes() : renderLander()}
     </div>
   );
 };
