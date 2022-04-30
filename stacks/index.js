@@ -3,7 +3,7 @@ import AuthStack from "./AuthStack";
 import StorageStack from "./StorageStack";
 import FrontendStack from "./FrontendStack";
 
-export const main = (app) => {
+const main = (app) => {
   const storageStack = new StorageStack(app, "storage");
 
   const apiStack = new ApiStack(app, "api", {
@@ -21,3 +21,5 @@ export const main = (app) => {
     bucket: storageStack.bucket,
   });
 };
+
+export default main;
