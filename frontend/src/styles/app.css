@@ -1,0 +1,39 @@
+@import "containers/home.css";
+@import "containers/login.css";
+@import "containers/new-note.css";
+@import "containers/not-found.css";
+@import "containers/signup.css";
+@import "containers/notes.css";
+@import "containers/settings.css";
+
+@import "components/loader-button.css";
+@import "components/billing-form.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Serif", serif;
+}
+
+select.form-control,
+textarea.form-control,
+input.form-control {
+  font-size: 1rem;
+}
+
+input[type="file"] {
+  width: 100%;
+}
