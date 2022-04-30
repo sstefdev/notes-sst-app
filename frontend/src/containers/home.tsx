@@ -4,7 +4,6 @@ import { BsPencilSquare } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import { useUserData } from "lib/user-context";
-import { onError } from "lib/error-lib";
 import { loadNotes } from "lib/api";
 import { Note } from "types";
 
@@ -23,7 +22,7 @@ const Home = () => {
         const notes = await loadNotes();
         setNotes(notes);
       } catch (e) {
-        onError(e);
+        console.log(e);
       }
 
       setIsLoading(false);
