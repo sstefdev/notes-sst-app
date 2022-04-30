@@ -8,6 +8,7 @@
 
 @import "components/loader-button.css";
 @import "components/billing-form.css";
+@import "components/error-boundary.css";
 
 body {
   margin: 0;

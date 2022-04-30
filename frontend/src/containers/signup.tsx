@@ -18,7 +18,7 @@ const Signup = () => {
     confirmPassword: "",
     confirmationCode: "",
   } as UserSignupCredentials);
-  const [newUser, setNewUser] = useState({});
+  const [newUser, setNewUser] = useState(null as any);
   const [isLoading, setIsLoading] = useState(false);
 
   const validateForm = () =>
